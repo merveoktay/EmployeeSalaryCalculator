@@ -1,0 +1,46 @@
+public class Employee {
+  String Name;
+  double Salary;
+  int WorkHours;
+  int HireYear;
+
+  Employee(String name, double salary, int workHours, int hireYear) {
+    Name = name;
+    Salary = salary;
+    WorkHours = workHours;
+    HireYear = hireYear;
+  }
+
+  public double tax() {
+    if (Salary > 999)
+      return Salary * 3 / 100;
+    return 0;
+  }
+
+  public double bonus() {
+    if (WorkHours > 40)
+      return (WorkHours - 40) * 30;
+    return 0;
+  }
+
+  public double raiseSalary() {
+    int diff = 2021 - HireYear;
+
+    if (diff < 10)
+      return Salary * 5 / 100;
+    else if (diff > 9 && diff < 20)
+      return Salary * 10 / 100;
+    else if (diff > 19)
+      return Salary * 15 / 100;
+    return 0;
+  }
+
+  public String toString() {
+    return "Adı: " + Name + "\nMaaşı: " + Salary + " \nÇalışma Saati: " + WorkHours + "\nBaşlangıç Yılı: "
+        + HireYear + "\nVergi: " + tax() + "\nBonus: " + bonus() + "\nMaaş Artışı: " + raiseSalary()
+        + "\nVergi ve Bonuslar ile Birlikte Maaş: " + (Salary - tax() + bonus())
+        + "\nToplam Maaş: " + (Salary + raiseSalary() - tax() + bonus());
+
+  }
+
+}
