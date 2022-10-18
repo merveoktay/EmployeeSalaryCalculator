@@ -1,13 +1,13 @@
 # EmployeeSalaryCalculator
 ebebek Java&amp;QA Practicum
 
-##Sınıfın Nitelikleri
+## Sınıfın Nitelikleri
 name : Çalışanın adı ve soyadı
 salary : Çalışanın maaşı
 workHours : Haftalık çalışma saati
 hireYear : İşe başlangıç yılı
 
-##Sınıfın Metotları
+## Sınıfın Metotları
 Employee(name,salary,workHours,hireYear) : Kurucu metot olup 4 parametre alacaktır.
 tax() : Maaşa uygulanan vergiyi hesaplayacaktır.
 Çalışanın maaşı 1000 TL'den az ise vergi uygulanmayacaktır.
@@ -19,7 +19,7 @@ Eğer çalışan 9 yıldan fazla ve 20 yıldan az çalışıyorsa maaşına %10 
 Eğer çalışan 19 yıldan fazla çalışıyorsa %15 zam yapılacaktır.
 toString() : Çalışana ait bilgileri ekrana bastıracaktır.
 
-##Örnek konsol çıktısı:
+## Örnek konsol çıktısı:
 Adı : kemal
 Maaşı : 2000.0
 Çalışma Saati : 45
