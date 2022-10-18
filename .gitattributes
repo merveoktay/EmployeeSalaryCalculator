@@ -1,1 +1,4 @@
 *.java linguist-detectable=true;
+*.python linguist-detectable=false;
+*.csharp linguist-detectable=false;
+*.html linguist-detectable=false;
