@@ -1,5 +1,5 @@
 # EmployeeSalaryCalculator
-ebebek Java&amp;QA Practicum
+
 
 ## Sınıfın Nitelikleri
 - name : Çalışanın adı ve soyadı
